@@ -1,0 +1,191 @@
+<body>
+    <h1 class="tp">Usuarios inscritos</h1>
+    <p class="tp">¡Descubre quien será tu nuevo compañero de clase en los cursos del profesor Julián!</p>
+    <h1 class="tInversion">Curso de inversión</h1>
+    <div class="inversion">
+        <table class="bordes">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pablo</td>
+                    <td>Picasso</td>
+                    <td>pdepicasso@hotmail.com</td>
+                </tr>
+                <tr>
+                    <td>William</td>
+                    <td>Shakespeare</td>
+                    <td>wshakespeare@hotmail.com</td>
+                </tr>
+                <tr *ngFor="let product of inversionProducts">
+                    <td>{{product.nombre}}</td>
+                    <td>{{product.apellido1}}</td>
+                    <td>{{product.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h1 class="tAltacocina">Curso de alta cocina</h1>
+    <div class="altacocina">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Barack</td>
+                    <td>Obama</td>
+                    <td>barackobama@whitehouse.com</td>
+                </tr>
+                <tr>
+                    <td>Napoleón</td>
+                    <td>Bonaparte</td>
+                    <td>nbonaparte@hotmail.com</td>
+                </tr>
+                <tr *ngFor="let product of altacocinaProducts">
+                    <td>{{product.nombre}}</td>
+                    <td>{{product.apellido1}}</td>
+                    <td>{{product.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h1 class="tIngles">Curso de inglés</h1>
+    <div class="fondoTabla">
+        <div class="ingles">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Faliyo</td>
+                        <td>San Roque</td>
+                        <td>elfalo@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Gengis</td>
+                        <td>Kan</td>
+                        <td>gengiskan@hotmail.com</td>
+                    </tr>
+                    <tr *ngFor="let product of inglesProducts">
+                        <td>{{product.nombre}}</td>
+                        <td>{{product.apellido1}}</td>
+                        <td>{{product.email}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <h1 class="tConduccion">Curso de conducción</h1>
+    <div class="conduccion">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fernando</td>
+                    <td>Alonso</td>
+                    <td>elnano@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Jesús</td>
+                    <td>de Nazaret</td>
+                    <td>jdenazaret@hotmail.com</td>
+                </tr>
+                <tr *ngFor="let product of conduccionProducts">
+                    <td>{{product.nombre}}</td>
+                    <td>{{product.apellido1}}</td>
+                    <td>{{product.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h1 class="tBuscador">¡Busca a tu amigo y descubre si esta en algun curso!</h1>
+    <input type="text" name="filtro" id="filtro" (keyup)="filterTable()" placeholder="Escribe el nombre...">
+    <div class="buscador">
+        <table id="miTabla">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products">
+                    <td>{{product.nombre}}</td>
+                    <td>{{product.apellido1}}</td>
+                    <td>{{product.email}}</td>
+                </tr>
+                <tr>
+                    <td>Pablo</td>
+                    <td>Picasso</td>
+                    <td>pdepicasso@hotmail.com</td>
+                </tr>
+                <tr>
+                    <td>William</td>
+                    <td>Shakespeare</td>
+                    <td>wshakespeare@hotmail.com</td>
+                </tr>
+                <tr>
+                    <td>Barack</td>
+                    <td>Obama</td>
+                    <td>barackobama@whitehouse.com</td>
+                </tr>
+                <tr>
+                    <td>Napoleón</td>
+                    <td>Bonaparte</td>
+                    <td>nbonaparte@hotmail.com</td>
+                </tr>
+                <tr>
+                    <td>Faliyo</td>
+                    <td>San Roque</td>
+                    <td>elfalo@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Gengis</td>
+                    <td>Kan</td>
+                    <td>gengiskan@hotmail.com</td>
+                </tr>
+                <tr>
+                    <td>Fernando</td>
+                    <td>Alonso</td>
+                    <td>elnano@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Jesús</td>
+                    <td>de Nazaret</td>
+                    <td>jdenazaret@hotmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+</body>

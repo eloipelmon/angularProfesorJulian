@@ -1,0 +1,106 @@
+body {
+    padding: 25px;
+    text-align: center;
+    background-color: rgb(211, 211, 211);
+}
+
+table {
+    width: 60%;
+    text-align: justify;
+}
+
+.tp{
+    text-align: center;
+}
+.inversion,
+.altacocina,
+.ingles,
+.conduccion,
+.buscador {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+th {
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+}
+tbody tr:hover{
+    background-color: rgb(255, 255, 255,0.3);
+    cursor: default;
+}
+.tInversion{
+    color: rgb(61, 61, 209);
+    font-weight: bold;
+    padding: 10px;
+}
+.inversion thead {
+    background-color: rgb(61, 61, 209);
+}
+
+.inversion tbody {
+    background-color: rgba(61, 61, 209, 0.774);
+}
+
+
+.tAltacocina{
+    color: rgb(137, 218, 71);
+    font-weight: bold;
+    padding: 10px;
+}
+.altacocina thead {
+    background-color: rgb(137, 218, 71);
+}
+
+.altacocina tbody {
+    background-color: rgba(137, 218, 71, 0.801);
+}
+
+.tIngles{
+    color: rgb(153, 62, 206);
+    font-weight: bold;
+    padding: 10px;
+}
+.ingles thead {
+    background-color: rgb(153, 62, 206);
+}
+
+.ingles tbody {
+    background-color: rgba(153, 62, 206, 0.733);
+}
+
+.tConduccion{
+    color: rgb(246, 144, 48);
+    font-weight: bold;
+    padding: 10px;
+}
+.conduccion thead {
+    background-color: rgb(246, 144, 48);
+}
+
+.conduccion tbody {
+    background-color: rgba(246, 144, 48, 0.747);
+}
+
+.tBuscador{
+    color: #7e88bd;
+    font-weight: bold;
+    padding: 10px;
+}
+.buscador thead {
+    background-color: #7e88bd;
+}
+
+.buscador tbody {
+    background-color: #7e89bdbb;
+}
+
+@media (max-width:800px) {
+    table {
+        width: 100%;
+    }
+}
